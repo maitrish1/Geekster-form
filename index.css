@@ -1,0 +1,88 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    height: 140vh;
+    justify-content: center;
+    align-items: center;
+    background: #1D4350;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #A43931, #1D4350);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #A43931, #1D4350); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.container{
+    max-width: 700px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 25px 30px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+.container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.container .title::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+}
+
+.container form .user-details{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+form .user-details .input-box{
+  width: 50vw;
+  margin: 20px 0 12px 0;
+}
+
+.user-details .input-box .user-details
+{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input{
+    height: 45px;
+    width:100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    font-size:16px;
+}
+
+
+form .gender-details .category{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.gender-details .category label{
+    display: flex;
+    align-items: center;
+}
+
+.gender-details, .category {
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+}
